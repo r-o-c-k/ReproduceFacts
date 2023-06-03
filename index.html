@@ -26,7 +26,7 @@
 
 [[True|4T]]&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp[[False|4F]]</tw-passagedata><tw-passagedata pid="5" name="Intro" tags="" position="100,75" size="100,100">Many harmful gender norms are grounded in misguided extrapolations about reproductive biology. (i.e. women give birth, therefore they should do all of the childrearing.) This game aims to dismantle gender inequities by unpacking the myths that cause them:
 
-(Please flip phone to landscape mode. The blue text below can be clicked.)
+(Blue text can be clicked.)
 (set: $factoidList to (array: &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;,&quot;13&quot;,&quot;14&quot;,&quot;15&quot;,&quot;16&quot;,&quot;17&quot;,&quot;18&quot;,&quot;19&quot;,&quot;20&quot;,&quot;21&quot;,&quot;22&quot;,&quot;23&quot;,&quot;24&quot;,&quot;25&quot;))
 (set: $headlineList to (array: &quot;1h&quot;,&quot;2h&quot;,&quot;3h&quot;))\
 =|=
@@ -505,13 +505,12 @@ Up to 65% of boys experience gynecomastia, or the enlargement of male breast tis
 &#39;)]</tw-passagedata><tw-passagedata pid="80" name="23" tags="T" position="5275,400" size="100,100">Using the same tampon for over 8 hours can lead to toxic shock syndrome.
 
 [[True|23T]]&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp[[False|23F]]</tw-passagedata><tw-passagedata pid="81" name="Headlines" tags="" position="100,700" size="100,100">(set: $headlinelength to $headlineList&#39;s length)
-
 (if: $headlinelength &gt; 0)[
 	(set: $index to (random: 1, $headlinelength))
 	(set: $headline to $headlineList&#39;s ($index))
 	(set: $headlineList to it - (array: $headline))
 	(go-to: $headline)
-    ]
+    ]\
         (if: $headlinelength&lt;=1)[ Congratualtions! You&#39;ve played through all of the headlines currently in the game and scored $hPoints/3 points!
    
    To learn about reproductive health and biology, play through the [[Factoids gamemode|Next]].]
